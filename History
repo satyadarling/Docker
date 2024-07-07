@@ -1,0 +1,231 @@
+ 1  cd git_mavan/
+    2  git clone https://github.com/sforcloud/devops-heloworld.git
+    3  cd devops-heloworld/
+    4  vim pom.xml
+    5  mvn clear compile package
+    6  exit
+    7  cd git_mavan/
+    8  cd devops-heloworld/webapp/target/
+    9  ls
+   10  git remote add origin https://github.com/satyadarling/war.git
+   11  git push -u origin main
+   12  cd git_mavan/devops-heloworld/webapp/target/
+   13  git pull -m origin
+   14  git pull -M origin
+   15  git push -u origin main
+   16  cd
+   17  cd -
+   18  cd /root/Docker/
+   19  vim Dockerfile
+   20  docker build -t saty_img
+   21  docker build -t saty_img .
+   22  vim Dockerfile
+   23  docker build -t saty_img .
+   24  cd /root/Docker/
+   25  vim Dockerfile
+   26  docker build -t saty_img .
+   27  docker images
+   28  docker run -itd -p 8080:8080 saty_img
+   29  vim Dockerfile
+   30  docker build -t saty_img .
+   31  docker container prune
+   32  docker run -itd -p 8080:8080 saty_img
+   33  vim Dockerfile
+   34  docker build -t saty_img .
+   35  docker container prune
+   36  docker run -itd -p 8080:8080 saty_img
+   37  docker exec -it f568b5587069 bash
+   38  ls -ltr
+   39  docker ps
+   40  docker ps -0a
+   41  docker ps -a
+   42  docker run -itd f568b5587069
+   43  docker run -it f568b5587069
+   44  docker run -itd -p 8080:8080 saty_img
+   45  docker exec -it 311431e51e bash
+   46  docker cp /root/git_mavan/devops-heloworld/webapp/target/webapp.war 311431e51ee617: /usr/local/tomcat/webapps/
+   47  docker cp /root/git_mavan/devops-heloworld/webapp/target/webapp.war 311431e51ee617:/usr/local/tomcat/webapps/
+   48  vim Dockerfile
+   49  docker build -t saty_img2 .
+   50  vim Dockerfile
+   51  mkdir Docker
+   52  cd Docker/
+   53  ls -ltr
+   54  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   55  # Add Docker's official GPG key:
+   56  sudo apt-get update
+   57  sudo apt-get install ca-certificates curl
+   58  sudo install -m 0755 -d /etc/apt/keyrings
+   59  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   60  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   61  # Add the repository to Apt sources:
+   62  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   63    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   64  sudo apt-get update
+   65  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   66  vim Dockerfile
+   67  cd ..
+   68  mkdir git_mavan
+   69  cd git_mavan/
+   70  apt-get install git -y
+   71  sudo apt install maven
+   72  mvn -version
+   73  cd git_mavan/
+   74  mvn clear compile package
+   75  cd devops-heloworld/
+   76  mvn clear compile package
+   77  ls
+   78  vim pom.xml
+   79  mvn clear compile package
+   80  vim pom.xml
+   81  mvn clear compile package
+   82  ls
+   83  cd git_mavan/
+   84  cd devops-heloworld/
+   85  vim pom.xml
+   86  mvn clear compile package
+   87  vim pom.xml
+   88  mvn clear compile package
+   89  vim pom.xml
+   90  mvn clear compile package
+   91  mvn clean install
+   92  cd webapp/target/
+   93  ls -ltr
+   94  pwd
+   95  cd /root/Docker
+   96  vim Dockerfile
+   97  cd -
+   98  cd ../../..
+   99  cd -
+  100  git init .
+  101  ls -ltr
+  102  git push -u origin main
+  103  git init
+  104  git add webapp.war
+  105  git c
+  106  git add maven-archiver webap
+  107  git add maven-archiver
+  108  git add webapp/
+  109  git commit -m "first commit"
+  110  git status
+  111  ls -ltr
+  112  git branch -M main
+  113  git remote add origin https://github.com/satyadarling/war.git
+  114  git push -u origin main
+  115  cd Docker/
+  116  ls -ltr
+  117  docker proun
+  118  docker ps
+  119  docker prune
+  120  docker container prune
+  121  vim docker
+  122  ls
+  123  vim Dockerfile
+  124  cd Docker/
+  125  vim Dockerfile
+  126  cd /root/git_mavan/devops-heloworld/webapp/target/
+  127  ls
+  128  cp /root/git_mavan/devops-heloworld/webapp/target/webapp.war .
+  129  chmode webapp.war
+  130  cp /root/git_mavan/devops-heloworld/webapp/target/webapp.war .
+  131  cd /root/Docker/
+  132  cp /root/git_mavan/devops-heloworld/webapp/target/webapp.war .
+  133  chmod 777 webapp.war
+  134  vim Dockerfile
+  135  pwdc
+  136  docher build -i satya .
+  137  docher build -i satya
+  138  docher build -t satya
+  139  docker build -t satya
+  140  docker build -t satya .
+  141  docker run -itd -p 8080:8080 satya
+  142  docker exec -it f3d7226191 bash
+  143  cd D
+  144  cd Docker/
+  145  ls -ltr
+  146  vim Dockerfile
+  147  wgert https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+  148  apt-get install wget
+  149  wget https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+  150  ls
+  151  vim Dockerfile
+  152  docker images
+  153  docker ps -a
+  154  docker rm -f f3d7226191d9
+  155  cd Docker/
+  156  ls -ltr
+  157  cat sample.war
+  158  cat Dockerfile
+  159  docker ps -a
+  160  docker ps
+  161  docker buiild -t amma
+  162  docker buiild -t amma .
+  163  docker build -t amma .
+  164  docker images
+  165  docker rmi 6333f72c5c4f 83aa9d69559a 062953cad515  4808cb29ae0b d33238fd9785
+  166  docker build -t amma .
+  167  docker images
+  168  docker ps
+  169  docker ps -a
+  170  docker run -itd -p 8080:8080 amma
+  171  docker rm -f 1c5c8160a1
+  172  docker run -itd -p 8080:8080 satya
+  173  docker run -itd -p 8080:8080 tomcat
+  174  docker rm -f 655f1ccb261249589bcd19a54745f378015cb6b61f34085c83b84fee532308cd
+  175  docker build -t satya .
+  176  cd Docker/
+  177  docker build -t satya .
+  178  docker run -itd -p 8080:8080 satya
+  179  cd Docker
+  180  ls -ltr
+  181  mv Dockerfile Dockerfile_bkp
+  182  vim Dockerfile
+  183  docker build -t tomcat .
+  184  docker ps
+  185  docker build -t tomcat .
+  186  vim Dockerfile
+  187  docker build -t tomcat .
+  188  docker ps
+  189  docker rm -f 04408de72bfe
+  190  docker images
+  191  docker run -itd -p 8080:8080 1b4a95638c58
+  192  docker run -it --rm --name tomcat /bin/bash
+  193  docker run -it --rm --name tomcat tomcat /bin/bash
+  194  docker rm -f 9abe99ddb1e19e8ff62e795990edf807f4346e9fb206573e986032aa24c03b35
+  195  docker run -itd -p 8080:8080 amma
+  196  docker run -it --rm --name amma amma /bin/bash
+  197  docker cp webapp.war 7a08c0226d78:/usr/local/tomcat/webapps/
+  198  docker cp webapp.war 7a08c0226d78:/usr/local/tomcat/webapps/sample.war
+  199  docker ps
+  200  docker cp webapp.war ed22c41b7022:/usr/local/tomcat/webapps/sample.war
+  201  ls -ltr
+  202  cd git_mavan/
+  203  ls -ltr
+  204  cd ../Docker
+  205  ls -ltr
+  206  cd
+  207  git init
+  208  ls
+  209  git commit -m "satya"
+  210  git add Docker
+  211  git add git_mavan
+  212  git branch -M main
+  213  git remote add origin https://github.com/satyadarling/Docker.git
+  214  git push -u origin main
+  215  git checkout -b main
+  216  git push -u origin main
+  217  git branch
+  218  ls
+  219  apt-get install git
+  220  git push -u origin main
+  221  git remote add origin https://github.com/satyadarling/Docker.git
+  222  git branch
+  223  git checkout -b main
+  224  git push -u origin main
+  225  git checkout -b main
+  226  ls
+  227  git push -u origin main
+  228  git commit -m "Initial commit"
+  229  git push -u origin main
+  230  history
+root@ip-172-31-63-23:~#
