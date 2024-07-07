@@ -1,0 +1,25 @@
+#RUN wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.25/bin/apache-tomcat-10.1.25.tar.gz -O /tmp/tomcat.tar.gz
+
+# Use an official OpenJDK image as a parent image
+FROM openjdk:11-jre-slim
+
+# Environment variables
+ENV CATALINA_HOME /usr/local/tomcat
+ENV PATH $CATALINA_HOME/bin:$PATH
+
+# Install curl
+RUN apt-get update && apt-get install -y curl
+
+# Download and extract Tomcat
+RUN curl -o /tmp/tomcat.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.25/bin/apache-tomcat-10.1.25.tar.gz \
+    && mkdir -p $CATALINA_HOME \
+    && tar xvfz /tmp/tomcat.tar.gz -C $CATALINA_HOME --strip-components=1 \
+    && rm /tmp/tomcat.tar.gz
+
+COPY sample.war /usr/local/tomcat/webapps/
+# Expose ports
+EXPOSE 8080
+
+# Start Tomcat
+CMD ["catalina.sh", "run"]
+
